@@ -37,7 +37,12 @@ img.emoji {
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.mercosur30anos.uy/xmlrpc.php?rsd">
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.mercosur30anos.uy/wp-includes/wlwmanifest.xml"> 
 <meta name="generator" content="WordPress 5.8">
-<link rel="preconnect" href="https://fonts.googleapis.com/">
+		<!-- Custom Logo: hide header text -->
+		<style id="custom-logo-css" type="text/css">.site-title, .site-description {
+				position: absolute;
+				clip: rect(1px, 1px, 1px, 1px);
+			}</style>
+		<link rel="preconnect" href="https://fonts.googleapis.com/">
 <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700&display=swap" rel="stylesheet">		<style type="text/css" id="wp-custom-css">body p html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, form, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6, a {
 	font-family: 'Titillium Web'!important;
@@ -134,7 +139,6 @@ td {
 }
  tr >  td:first-child {
 	background-color: #E0E0E0;
-	border-radius: 0 0 0 10px;
 }
 .has-fixed-layout {
 	border-radius: 10px;
@@ -151,10 +155,30 @@ td {
 
 .wp-block-separator {
 	    margin: 50px auto;
+}
+
+th { 
+    line-height: 19px;
+    font-size: 14px;align-content}
+
+table {
+	    border-radius: 20px;
+    overflow: hidden;
+}
+
+p {
+	    text-align: justify!important;
+}
+
+.site-info {
+	display: none!important;
+}
+.has-text-align-right {
+	text-align: right!important;
 }</style>
 		</head>
 
-<body class="archive author author-mercosuradmin author-1 wp-embed-responsive hfeed image-filters-enabled">
+<body class="archive author author-mercosuradmin author-1 wp-custom-logo wp-embed-responsive hfeed image-filters-enabled">
 
 
 <div id="page" class="site">
@@ -163,10 +187,11 @@ td {
 	<header id="masthead" class="site-header responsive-max-width">
 	<div class="site-branding">
 
+			<div class="site-logo"><a href="http://www.mercosur30anos.uy/" class="custom-logo-link" rel="home"><img width="263" height="100" src="http://www.mercosur30anos.uy/wp-content/uploads/2021/09/cropped-logo.png" class="custom-logo" alt="Mercosur 30 años"></a></div>
 								<p class="site-title"><a href="http://www.mercosur30anos.uy/" rel="home">Mercosur 30 años</a></p>
 			
 				<p class="site-description">
-				TRAYECTORIAS, FLEXIBILIZACIÓN E INTERREGIONALISMO			</p>
+				TRAYECTORIAS, FLEXIBILIZACIÓN ‎E INTERREGIONALISMO			</p>
 	</div>
 <!-- .site-branding -->
 		<nav id="site-navigation" class="main-navigation" aria-label="Main Navigation">
@@ -231,14 +256,26 @@ td {
 	<footer id="colophon" class="site-footer responsive-max-width">
 	
 	<aside class="widget-area responsive-max-width" role="complementary" aria-label="Footer">
-		<section id="block-15" class="widget widget_block">
+		<section id="block-22" class="widget widget_block">
 <hr class="wp-block-separator">
+</section><section id="block-20" class="widget widget_block">
+<div class="wp-block-columns">
+<div class="wp-block-column">
+<p><a href="https://cienciassociales.edu.uy/"><sub>@2021</sub></a></p>
+</div>
+
+
+
+<div class="wp-block-column">
+<p class="has-text-align-right"><span style="color:#cccccc" class="has-inline-color"><sub>Desarrollado por <a href="http://www.tmassuia.live/" data-type="URL" data-id="www.tmassuia.live" target="_blank" rel="noreferrer noopener">Thiago Massuia</a></sub></span></p>
+</div>
+</div>
 </section>	</aside><!-- .widget-area -->
 
 
 	<div class="site-info">
 					<a class="site-name" href="http://www.mercosur30anos.uy/" rel="home">Mercosur 30 años</a><span class="comma">,</span>
-</div>
+<a href="https://wordpress.org/" class="imprint">proudly powered by WordPress</a>.	</div>
 <!-- .site-info -->
 </footer><!-- #colophon -->
 
