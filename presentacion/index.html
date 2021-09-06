@@ -28,9 +28,12 @@ img.emoji {
 }</style>
 	<link rel="stylesheet" id="wp-block-library-css" href="http://www.mercosur30anos.uy/wp-includes/css/dist/block-library/style.min.css?ver=5.8" type="text/css" media="all">
 <style id="wp-block-library-theme-inline-css" type="text/css">#start-resizable-editor-section{display:none}.wp-block-audio figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio figcaption{color:hsla(0,0%,100%,.65)}.wp-block-code{font-family:Menlo,Consolas,monaco,monospace;color:#1e1e1e;padding:.8em 1em;border:1px solid #ddd;border-radius:4px}.wp-block-embed figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed figcaption{color:hsla(0,0%,100%,.65)}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:hsla(0,0%,100%,.65)}.wp-block-image figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-image figcaption{color:hsla(0,0%,100%,.65)}.wp-block-pullquote{border-top:4px solid;border-bottom:4px solid;margin-bottom:1.75em;color:currentColor}.wp-block-pullquote__citation,.wp-block-pullquote cite,.wp-block-pullquote footer{color:currentColor;text-transform:uppercase;font-size:.8125em;font-style:normal}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;position:relative;font-style:normal}.wp-block-quote.has-text-align-right{border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote.has-text-align-center{border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large{border:none}.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-group.has-background{padding:1.25em 2.375em;margin-top:0;margin-bottom:0}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto;opacity:.4}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table thead{border-bottom:3px solid}.wp-block-table tfoot{border-top:3px solid}.wp-block-table td,.wp-block-table th{padding:.5em;border:1px solid;word-break:normal}.wp-block-table figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video figcaption{color:hsla(0,0%,100%,.65)}.wp-block-template-part.has-background{padding:1.25em 2.375em;margin-top:0;margin-bottom:0}#end-resizable-editor-section{display:none}</style>
+<link rel="stylesheet" id="wpfront-scroll-top-css" href="http://www.mercosur30anos.uy/wp-content/plugins/wpfront-scroll-top/css/wpfront-scroll-top.min.css?ver=2.0.7.08086" type="text/css" media="all">
 <link rel="stylesheet" id="varia-print-style-css" href="http://www.mercosur30anos.uy/wp-content/themes/varia-wpcom/print.css?ver=1.3.10" type="text/css" media="print">
 <link rel="stylesheet" id="balasana-fonts-css" href="https://fonts.googleapis.com/css?family=Roboto+Condensed%3A400%2C400i%2C700%2C700i%7CRoboto%3A400%2C400i%2C700%2C700i&#038;subset=latin%2Clatin-ext" type="text/css" media="all">
 <link rel="stylesheet" id="balasana-style-css" href="http://www.mercosur30anos.uy/wp-content/themes/balasana-wpcom/style.css?ver=1.3.10" type="text/css" media="all">
+<script type="text/javascript" src="http://www.mercosur30anos.uy/wp-includes/js/jquery/jquery.min.js?ver=3.6.0" id="jquery-core-js"></script>
+<script type="text/javascript" src="http://www.mercosur30anos.uy/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script>
 <link rel="https://api.w.org/" href="http://www.mercosur30anos.uy/wp-json/">
 <link rel="alternate" type="application/json" href="http://www.mercosur30anos.uy/wp-json/wp/v2/pages/88">
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.mercosur30anos.uy/xmlrpc.php?rsd">
@@ -182,6 +185,16 @@ p {
 
 thead > tr > th {
 	text-align: center!important
+}
+
+#colophon {
+  background-image: linear-gradient(#F1F0E7, #fff);
+	width: 100%;
+	max-width: 100%;
+}
+
+#page {
+    overflow: hidden;
 }</style>
 		</head>
 
@@ -327,6 +340,19 @@ thead > tr > th {
 </div>
 <!-- #page -->
 
+        <div id="wpfront-scroll-top-container">
+            <img src="http://www.mercosur30anos.uy/wp-content/plugins/wpfront-scroll-top/images/icons/1.png" alt="">        </div>
+                <script type="text/javascript">
+            function wpfront_scroll_top_init() {
+                if (typeof wpfront_scroll_top === "function" && typeof jQuery !== "undefined") {
+                    wpfront_scroll_top({"scroll_offset":200,"button_width":0,"button_height":0,"button_opacity":0.7,"button_fade_duration":800,"scroll_duration":800,"location":1,"marginX":20,"marginY":20,"hide_iframe":false,"auto_hide":false,"auto_hide_after":2,"button_action":"top","button_action_element_selector":"","button_action_container_selector":"html, body","button_action_element_offset":0});
+                } else {
+                    setTimeout(wpfront_scroll_top_init, 100);
+                }
+            }
+            wpfront_scroll_top_init();
+        </script>
+        <script type="text/javascript" src="http://www.mercosur30anos.uy/wp-content/plugins/wpfront-scroll-top/js/wpfront-scroll-top.min.js?ver=2.0.7.08086" id="wpfront-scroll-top-js" async="async" defer></script>
 <script type="text/javascript" src="http://www.mercosur30anos.uy/wp-includes/js/wp-embed.min.js?ver=5.8" id="wp-embed-js"></script>
 	<script>
 	/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())},!1);
